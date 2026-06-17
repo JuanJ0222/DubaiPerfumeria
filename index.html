@@ -160,7 +160,7 @@ const PRODUCTS = [
   {code:'043',name:'Polo red parfum 125ml for men',price:120000,img:'https://domun.co/default/image-tool-lambda?new-width=400&new-height=400&new-quality=80&url-image=https%3A%2F%2Fassets.domun.co%2Fsumer-app-90b8f.appspot.com%2Fproduct_photos%252F710d8aba509f0e1c42d8e4264b11ad90%252F23c308b3-19e7-4da2-ac91-3e82f3bcba75%3Falt%3Dmedia%26token%3D74184927-e807-4474-9b43-15b99147b2e7',cat:'men'},
   {code:'044',name:'Polo blue parfum 125ml for men',price:120000,img:'https://domun.co/default/image-tool-lambda?new-width=400&new-height=400&new-quality=80&url-image=https%3A%2F%2Fassets.domun.co%2Fsumer-app-90b8f.appspot.com%2Fproduct_photos%252F710d8aba509f0e1c42d8e4264b11ad90%252F85d7903e-8f67-4d0a-b4bd-72bec3f20579%3Falt%3Dmedia%26token%3Dcf0445a1-04ec-4f7a-9e9a-b09a0a60778c',cat:'men'},
   {code:'045',name:'Bond•9 bleecker street NYC unisex',price:160000,rot:'R',img:'https://domun.co/default/image-tool-lambda?new-width=400&new-height=400&new-quality=80&url-image=https%3A%2F%2Fassets.domun.co%2Fsumer-app-90b8f.appspot.com%2Fproduct_photos%252F710d8aba509f0e1c42d8e4264b11ad90%252Fac69c66f-a32a-416b-9605-289e2c5702a4%3Falt%3Dmedia%26token%3Dbc18889b-2f03-42f0-9345-06857af59996',cat:'unisex'},
-  {code:'046',name:'Al-Haramain Amber gold 100ml Baul Unisex',price:200000,rot:'R',img:'https://domun.co/default/image-tool-lambda?new-width=400&new-height=400&new-quality=80&url-image=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fsumer-app-90b8f.appspot.com%2Fo%2Fproduct_photos%252F710d8aba509f0e1c42d8e4264b11ad90%252F1ed80168-f4db-4ca9-b0b2-6c666d70bec3%3Falt%3Dmedia%26token%3Db00ef2a5-6a8d-4cf6-b11a-8534a041a454',cat:'unisex'},
+  {code:'046',name:'Al-Haramain Amber gold 100ml 1.1 Baul Unisex',price:200000,rot:'R',img:'https://domun.co/default/image-tool-lambda?new-width=400&new-height=400&new-quality=80&url-image=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fsumer-app-90b8f.appspot.com%2Fo%2Fproduct_photos%252F710d8aba509f0e1c42d8e4264b11ad90%252F1ed80168-f4db-4ca9-b0b2-6c666d70bec3%3Falt%3Dmedia%26token%3Db00ef2a5-6a8d-4cf6-b11a-8534a041a454',cat:'unisex'},
   {code:'047',name:'Lattafa khamrah 1.1 Unisex',price:170000,rot:'R',img:'https://domun.co/default/image-tool-lambda?new-width=400&new-height=400&new-quality=80&url-image=https%3A%2F%2Fassets.domun.co%2Fsumer-app-90b8f.appspot.com%2Fproduct_photos%252F710d8aba509f0e1c42d8e4264b11ad90%252Fe39c5134-0f17-4af3-bd36-76ae3f5c4b84%3Falt%3Dmedia%26token%3Dbe0701a4-63da-4903-9f8c-613aaa4c355c',cat:'unisex'},
   {code:'048',name:'JeanPaulGaultier elixir 1.1 for men',price:140000,rot:'R',img:'https://domun.co/default/image-tool-lambda?new-width=400&new-height=400&new-quality=80&url-image=https%3A%2F%2Fassets.domun.co%2Fsumer-app-90b8f.appspot.com%2Fproduct_photos%252F710d8aba509f0e1c42d8e4264b11ad90%252F227ce2cd-19c9-4abf-b3c8-439043c60c62%3Falt%3Dmedia%26token%3D17b0b6b6-8f50-49e4-837b-229476df92e8',cat:'men'},
   {code:'049',name:'Lattafa yara tous for woman',price:120000,rot:'R',img:'https://domun.co/default/image-tool-lambda?new-width=400&new-height=400&new-quality=80&url-image=https%3A%2F%2Fassets.domun.co%2Fsumer-app-90b8f.appspot.com%2Fproduct_photos%252F710d8aba509f0e1c42d8e4264b11ad90%252Fe97fa6a4-af33-4c7c-87a6-f47faffe0a17%3Falt%3Dmedia%26token%3D65e17bd5-1002-4d9c-acb1-4e35a8623c71',cat:'women'},
@@ -489,7 +489,7 @@ const PRODUCTS = [
   {code:'372',name:'Lattafa Eclaire Pistache Unisex',price:160000,cat:'unisex',img:'https://domun.co/default/image-tool-lambda?new-width=400&new-height=400&new-quality=80&url-image=https%3A%2F%2Fassets.domun.co%2Fsumer-app-90b8f.appspot.com%2Fproduct_photos%252F4de7f52db6b6c5a799c8c2f27c2194fb%252F61b678ce-c8f3-4493-b1d1-44a469823d9b%3Falt%3Dmedia%26token%3D7a650eee-60a1-45bf-9f04-16cc21cd116b'}
 ];
 let currentCat = 'all';
-let agotadas = new Set(['012','046']);
+let agotadas = new Set(['012']);
 
 function fmt(p) {
   return '$' + p.toLocaleString('es-CO');
@@ -581,7 +581,7 @@ function descargarHTML() {
   const codesArr = [...agotadas].map(c => "'" + c + "'").join(',');
   const updated = html.replace(
     /let agotadas = new Set\(\[.*?\]\);/,
-    "let agotadas = new Set(['012','046']);"
+    "let agotadas = new Set(['012']);"
   );
   const blob = new Blob([updated], { type: 'text/html;charset=utf-8' });
   const a = document.createElement('a');
